@@ -329,10 +329,10 @@ opacity:0;
   padding: 5px 0;
   border-radius: 20px;
   width: 250px;
-  top: 100%;
+
+  bottom: 100%;
   left: 50%;
-  margin-top: -10px;
-  margin-left: -60px;
+  margin-left: -60px; 
     transition:opacity 100ms,margin 100ms;
   position: absolute;
   z-index: 1;
