@@ -1,10 +1,10 @@
-/* Reset some default styles */
+
 body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
 
-/* Global Styles */
+
 body {
 
   font-family: Arial, sans-serif;
@@ -56,6 +56,7 @@ max-height: 100px;
 
 .nuwtf {
 display: flex;
+max-height: 5%;
 
 }
 
@@ -96,13 +97,14 @@ border-spacing:7px
 
 
 .containerhead:hover .header-image img {
-  transform: scale(1); 
+  transform: scale(1) translateY(3vw); 
 box-shadow: 0 40px 60px rgba(0, 0, 0, 1);
     max-width: 100%;
 } 
 
 .containerhead:hover .header-image {
   transform: translateX(-5vw);
+      max-width: 23%;
 }
 
 .containerhead:hover .extend {
@@ -146,13 +148,15 @@ border-radius:20px;
     margin-right: 0;
   border-radius: 20px;
 
+  margin-bottom:30%;
+
 box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
   transition: transform 1s, max-width 1s, box-shadow 1s;
 
 }
 
 .header-image {
-  width: 50%;
+  width: 23%;
   margin-top: 0px;
   align-items: end;
   padding-right: 1%;
@@ -169,6 +173,7 @@ box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
   display: block;
   transition: transform 1s;
   padding: 10px;
+  margin-bottom:100px;
   color: #fff;
     text-shadow: 0 20px 12px rgba(0, 0, 0, 1);
     
