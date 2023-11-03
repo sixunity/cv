@@ -1,0 +1,392 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+    transition: height 10s, transform 0.5s;
+      box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        z-index: 5;
+}
+
+.drawtitle{
+  max-width: 50vw;
+    margin: 0 auto;
+  padding: 20px;
+}
+
+.header-content {
+  margin: 0 auto;
+  display: float;
+  align-items: center;
+  justify-content: space-between;
+  transition: max-height 1s, transform 1s, box-shadow 1s;
+  overflow: hidden;
+  border-radius: 20px;
+max-height: 90px;
+      box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-content {
+  margin: 0 0;
+  display: float;
+  align-items: center;
+  justify-content: space-between;
+  transition: max-height 1s, transform 1s, box-shadow 1s cubic-bezier(1,0,0,1);
+  overflow: hidden;
+  border-radius: 20px;
+max-height: 100px;
+
+}
+
+
+
+.nuwtf {
+display: flex;
+
+}
+
+.nuwtf2 {
+max-height: 5%;
+
+}
+
+table{
+border-spacing:7px
+}
+
+
+.containerhead:hover .header-content {
+  max-height: 400px; 
+  transform: scale(1); 
+
+  
+
+  
+}
+
+.containerexp:hover .experience-content {
+  max-height: 400px; 
+  transform: scale(1); 
+
+  
+
+  
+}
+
+.containerhead:hover .header-text {
+
+  transform: translateX(5vw);
+  text-shadow: 0 20px 12px rgba(0, 0, 0, 1);
+  
+}
+
+
+.containerhead:hover .header-image img {
+  transform: scale(1); 
+box-shadow: 0 40px 60px rgba(0, 0, 0, 1);
+    max-width: 100%;
+} 
+
+.containerhead:hover .header-image {
+  transform: translateX(-5vw);
+}
+
+.containerhead:hover .extend {
+height: 500px;
+}
+
+
+.header-text {
+width: 50%;
+    float: left;
+        margin-right: auto;
+          margin-left: 0;
+transition: transform 1s, order 1s, text-shadow 1s;
+order: 2;
+  padding: 1%;
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
+}
+
+.workplacename{
+          margin-left: 15px;
+          margin-top: 5px;          
+}
+.workdesc{
+          margin-left: 15px;
+          margin-bottom: 15px;
+}
+
+
+
+.mySlides{
+height: 20vh;
+border-radius:20px;
+
+}
+
+
+.header-image img {
+  max-width: 8vh;
+  height: auto;
+  margin-left: auto;
+    margin-right: 0;
+  border-radius: 20px;
+
+box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
+  transition: transform 1s, max-width 1s, box-shadow 1s;
+
+}
+
+.header-image {
+  width: 50%;
+  margin-top: 0px;
+  align-items: end;
+  padding-right: 1%;
+  box-shadow: 2px;
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  margin-bottom: 0px;
+  order: 2;
+  transition: transform 1s;
+}
+
+.expanded-content {
+  display: block;
+  transition: transform 1s;
+  padding: 10px;
+  color: #fff;
+    text-shadow: 0 20px 12px rgba(0, 0, 0, 1);
+    
+}
+
+.desc {
+  display: block;
+  transition: transform 1s;
+  padding: 10px;
+  color: #fff;
+    text-shadow: 0 20px 12px rgba(0, 0, 0, 1);
+    
+}
+
+.containerhead:hover .expanded-content {
+  display: block;
+    transform: translateY(-5vw) translateX(5vw);
+
+}
+
+.containerhead:hover .guide {
+    transform: translateX(5vw);
+opacity:0;
+
+}
+
+.guide{
+opacity:0.5;
+transition: all 1s;
+}
+
+.cv {
+  width: 1vw;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 15%;
+  margin-right: auto;
+}
+
+p{
+line-height: 25px;
+}
+
+.velviens{
+width: 70vw;
+}
+
+#experience > .header-text {
+
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 20px;
+    transition: height 0.5s, transform 0.5s;
+
+}
+
+header:hover{
+  transform: skew(1deg, 1deg);
+
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.section {
+  padding: 40px 0;
+}
+
+
+.job {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.job h3 {
+  margin-top: 0;
+}
+
+
+.dropdown-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+    border-radius: 20px;
+}
+
+.job:hover .dropdown-content{
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+
+footer {
+max-height: 100px;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+
+
+.social-icons a {
+max-height: 10px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
+}
+.tooltip .tooltiptext {
+opacity:0;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 20px;
+  width: 250px;
+  top: 100%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -60px;
+    transition:opacity 100ms,margin 100ms;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+    margin-top: 0px;
+}
+
+@media only screen and (max-device-width: 1080px) {
+.header-image img {
+  max-width: 8vh;
+  height: 4vh;
+  margin-left: auto;
+    margin-right: 0;
+  border-radius: 20px;
+
+box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
+  transition: transform 1s, max-width 1s, box-shadow 1s;
+
+}
+
+.containerhead:hover .expanded-content {
+  display: block;
+    transform: translateY(-1vw) translateX(3vw);
+
+}
+
+.mySlides{
+margin-right:0px;
+margin-left:0px;
+opacity: 0.3;
+max-height:10vw;
+transition: all 0.5s ease;
+      box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.1);
+}
+    }
+
+#imagers {
+  transition: transform 0.5s ease; 
+  max-height: 300px;
+}
+
+.mySlides{
+margin-right:0px;
+margin-left:0px;
+opacity: 0.3;
+transition: all 0.5s ease;
+      box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guide{
+
+}
+.nut{
+width:100%;
+}
+.uhh{
+width:100%;
+}
+
