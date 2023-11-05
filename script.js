@@ -31,6 +31,7 @@ function carousel() {
     slidesArray[i].style.transform = "scale(1)";
     slidesArray[i].style.marginRight = "0px";
     slidesArray[i].style.marginLeft = "0px";
+        slidesArray[i].style.zIndex = 1;
   }
 
   slideIndex = (slideIndex + 1) % slidesArray.length;
@@ -39,6 +40,7 @@ function carousel() {
   slidesArray[slideIndex].style.marginRight = "20px";
   slidesArray[slideIndex].style.marginLeft = "20px";
   slidesArray[slideIndex].style.transform = "scale(1.2)";
+          slidesArray[slideIndex].style.zIndex = "10";
   container.classList.remove("changeOrderAnimation");
 
   carouselInterval = setTimeout(function () {
@@ -57,12 +59,14 @@ function pauseCarousel(event) {
     slidesArray[i].style.transform = "scale(1)";
     slidesArray[i].style.marginRight = "0px";
     slidesArray[i].style.marginLeft = "0px";
+              slidesArray[slideIndex].style.zIndex = 1;
   }
 
   targetImage.style.opacity = 1;
   targetImage.style.marginRight = "30px";
   targetImage.style.marginLeft = "30px";
   targetImage.style.transform = "scale(1.3)";
+            targetImage.style.zIndex = "100";
   clearInterval(carouselInterval);
 }
 
