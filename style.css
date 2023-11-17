@@ -71,7 +71,7 @@ border-spacing:7px
 
 
 .containerhead:hover .header-content {
-  max-height: 400px; 
+  max-height: 200px; 
   transform: scale(1); 
 
   
@@ -80,7 +80,7 @@ border-spacing:7px
 }
 
 .containerexp:hover .experience-content {
-  max-height: 400px; 
+  max-height: 200px; 
   transform: scale(1); 
 
   
@@ -97,14 +97,14 @@ border-spacing:7px
 
 
 .containerhead:hover .header-image img {
-  transform: scale(1) translateY(3vw); 
+  transform: scale(1) translateY(1vw); 
 box-shadow: 0 40px 60px rgba(0, 0, 0, 1);
     max-width: 100%;
 } 
 
 .containerhead:hover .header-image {
-  transform: translateX(-5vw);
-      max-width: 23%;
+  transform: translateX(-3vw);
+      max-width: 15%;
 }
 
 .containerhead:hover .extend {
@@ -142,7 +142,7 @@ border-radius:20px;
 
 
 .header-image img {
-  max-width: 8vh;
+  max-width: 10vh;
   height: auto;
   margin-left: auto;
     margin-right: 0;
@@ -156,8 +156,9 @@ box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
 }
 
 .header-image {
-  width: 23%;
+  width: 10vw;
   margin-top: 0px;
+
   align-items: end;
   padding-right: 1%;
   box-shadow: 2px;
@@ -319,23 +320,38 @@ max-height: 10px;
 .tooltip {
   position: relative;
   display: inline-block;
+
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0);
+}
+
+.tooltip:hover > img{
+transform: translateY(-0.5vw);
+
+}
+
+.tooltip > img{
+
+    transition:all 100ms;
 }
 .tooltip .tooltiptext {
 opacity:0;
-  background-color: black;
+  background-color: #333333;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 10px;
   border-radius: 20px;
   width: 250px;
 
   bottom: 100%;
   left: 50%;
   margin-left: -60px; 
-    transition:opacity 100ms,margin 100ms;
+    transition:all 100ms;
   position: absolute;
   z-index: 1;
+}
+
+.tooltiptext{
+padding-top:50px;
 }
 
 .tooltip:hover > .tooltiptext {
@@ -398,12 +414,17 @@ max-height:0px;
 #imagers {
   transition: transform 0.5s ease; 
   max-height: 300px;
+      white-space: nowrap;
+  
 }
 
 .mySlides{
 margin-right:0px;
 margin-left:0px;
 opacity: 0.3;
+  max-height: 300px;
+  min-height: 150px;
+
 transition: all 0.5s ease;
       box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.1);
 }
